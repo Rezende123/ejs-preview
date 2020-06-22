@@ -1,0 +1,13 @@
+.card-preview {
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+    grid-column-gap: 15px;
+}
+
+.btn-build {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
