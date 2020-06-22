@@ -1,0 +1,19 @@
+footer {
+    box-sizing: border-box;
+    height: 100%;
+
+    background-color: #f8f587;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-content {
+    margin: 0px;
+    text-align: center;
+}
+.footer-content > a {
+    text-decoration: none;
+}

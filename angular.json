@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ejs-preview"
+    }
+  },
+  "defaultProject": "ejs-preview",
+  "cli": {
+    "analytics": false
+  }
 }

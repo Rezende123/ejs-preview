@@ -1,0 +1,21 @@
+#app {
+    height: 100%;
+    color: #6b6b6b;
+
+    display: grid;
+    grid-template-rows: 64px 1fr 50px;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+
+app-menu {
+    grid-area: header;
+}
+app-content {
+    grid-area: main;
+}
+app-footer {
+    grid-area: footer;
+}
