@@ -1,0 +1,15 @@
+<mat-tab-group mat-align-tabs="start">
+  <mat-tab *ngFor="let tab of tabsConfig; let i = index"
+    [label]="tab.label">
+    <div
+      [class.code-error]="tab.error"
+      ace-editor
+      [theme]="'light'"
+      [mode]="modeByField(tab.field)"
+      (textChanged)="onChange(tab.field, i, $event)">
+    </div>
+    <span class="error-message" *ngIf="tab.error">
+      {{tab.error}}
+    </span>
+  </mat-tab>
+</mat-tab-group>

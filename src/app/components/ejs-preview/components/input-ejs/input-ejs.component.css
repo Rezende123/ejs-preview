@@ -1,0 +1,10 @@
+[ace-editor] {
+    min-height: 300px;
+}
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+}
+.code-error {
+    border: 1px solid red;
+}
