@@ -14,7 +14,7 @@ export class InputEjsComponent {
   data: EjsRenderData;
   tabsConfig = [
     {
-      label: 'Ejs',
+      label: 'Template',
       field: 'ejs',
       mode: 'html'
     },
