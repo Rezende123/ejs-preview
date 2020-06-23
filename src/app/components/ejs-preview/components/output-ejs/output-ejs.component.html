@@ -1,9 +1,9 @@
 <mat-tab-group mat-align-tabs="start">
-  <mat-tab label="Renderizado">
+  <mat-tab label="{{'rendered' | translate}}">
     <iframe [srcdoc]="html"></iframe>
   </mat-tab>
 
-  <mat-tab label="Código">
+  <mat-tab label="{{'code' | translate}}">
     <div
       ace-editor
       [readOnly]="true"
