@@ -30,6 +30,13 @@
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
+  "keywords": [
+    "preview ejs",
+    "ejs",
+    "ejs build",
+    "ejs render",
+    "ejs compile"
+  ],
   "browser": {
     "fs": false,
     "path": false,
