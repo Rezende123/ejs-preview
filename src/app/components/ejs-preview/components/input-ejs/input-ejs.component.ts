@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { EjsRenderData } from '../../interfaces/ejs-render-data';
 
 @Component({
@@ -8,22 +8,26 @@ import { EjsRenderData } from '../../interfaces/ejs-render-data';
 })
 export class InputEjsComponent {
 
-  data: EjsRenderData;
+  @Output()
+  sendData = new EventEmitter<EjsRenderData>();
 
+  data: EjsRenderData;
   tabsConfig = [
     {
       label: 'Ejs',
       field: 'ejs',
-      error: null
+      mode: 'html'
     },
     {
       label: 'Dados',
       field: 'data',
+      mode: 'json',
       error: null
     },
     {
       label: 'Opções',
       field: 'options',
+      mode: 'json',
       error: null
     }
   ];
@@ -46,17 +50,14 @@ export class InputEjsComponent {
 
     this.tabsConfig[index].error = null;
     this.data[field] = content;
-    console.log(this.data);
+
+    this.updateData();
   }
 
-  modeByField(field: string) {
-    switch (field) {
-      case 'ejs':
-        return 'html';
-
-      case 'data':
-      case 'options':
-        return 'json';
+  updateData() {
+    const dataIsValid = this.data && this.data.ejs && !this.tabsConfig.find(t => t.error);
+    if (dataIsValid) {
+      this.sendData.emit(this.data);
     }
   }
 

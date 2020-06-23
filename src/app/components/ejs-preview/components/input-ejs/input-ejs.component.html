@@ -5,7 +5,7 @@
       [class.code-error]="tab.error"
       ace-editor
       [theme]="'light'"
-      [mode]="modeByField(tab.field)"
+      [mode]="tab.mode"
       (textChanged)="onChange(tab.field, i, $event)">
     </div>
     <span class="error-message" *ngIf="tab.error">
