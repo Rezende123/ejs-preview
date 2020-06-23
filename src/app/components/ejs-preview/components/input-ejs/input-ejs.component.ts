@@ -40,7 +40,7 @@ export class InputEjsComponent {
       try {
         content = JSON.parse(content);
       } catch (e) {
-        this.tabsConfig[index].error = 'Erro no formato do JSON';
+        this.tabsConfig[index].error = 'err_json_format';
         return;
       }
     }

@@ -18,5 +18,7 @@
     "data": "Dados",
     "options": "Opções",
     "rendered": "Renderizado",
-    "code": "Código"
+    "code": "Código",
+
+    "err_json_format": "Erro no formato do JSON"
 }

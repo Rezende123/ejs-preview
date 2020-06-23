@@ -9,7 +9,7 @@
       (textChanged)="onChange(tab.field, i, $event)">
     </div>
     <span class="error-message" *ngIf="tab.error">
-      {{tab.error}}
+      {{tab.error | translate}}
     </span>
   </mat-tab>
 </mat-tab-group>
