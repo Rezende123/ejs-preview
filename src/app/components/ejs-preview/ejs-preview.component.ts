@@ -22,6 +22,7 @@ export class EjsPreviewComponent implements OnInit {
 
   setRenderData(data) {
     this.data = data;
+    this.build();
   }
 
   build() {
