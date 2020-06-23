@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { AceEditorModule } from 'ng2-ace-editor';
 import { InputEjsComponent } from './components/input-ejs/input-ejs.component';
+import { OutputEjsComponent } from './components/output-ejs/output-ejs.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { InputEjsComponent } from './components/input-ejs/input-ejs.component';
   ],
   declarations: [
     EjsPreviewComponent,
-    InputEjsComponent
+    InputEjsComponent,
+    OutputEjsComponent
   ],
   exports: [
     EjsPreviewComponent

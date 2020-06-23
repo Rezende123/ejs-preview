@@ -1,0 +1,15 @@
+<mat-tab-group mat-align-tabs="start">
+  <mat-tab label="Renderizado">
+    <iframe [srcdoc]="html"></iframe>
+  </mat-tab>
+
+  <mat-tab label="Código">
+    <div
+      ace-editor
+      [readOnly]="true"
+      [theme]="'light'"
+      [mode]="'html'"
+      [text]="html">
+    </div>
+  </mat-tab>
+</mat-tab-group>
