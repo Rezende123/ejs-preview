@@ -14,18 +14,15 @@ export class InputEjsComponent {
   data: EjsRenderData;
   tabsConfig = [
     {
-      label: 'template',
-      field: 'ejs',
+      field: 'template',
       mode: 'html'
     },
     {
-      label: 'data',
       field: 'data',
       mode: 'json',
       error: null
     },
     {
-      label: 'options',
       field: 'options',
       mode: 'json',
       error: null
@@ -55,7 +52,7 @@ export class InputEjsComponent {
   }
 
   updateData() {
-    const dataIsValid = this.data && this.data.ejs && !this.tabsConfig.find(t => t.error);
+    const dataIsValid = this.data && this.data.template && !this.tabsConfig.find(t => t.error);
     if (dataIsValid) {
       this.sendData.emit(this.data);
     }

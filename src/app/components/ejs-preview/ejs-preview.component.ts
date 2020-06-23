@@ -26,7 +26,7 @@ export class EjsPreviewComponent implements OnInit {
   }
 
   build() {
-    this.html = this.buildHtml.build(this.data.ejs, this.data.data, this.data.options);
+    this.html = this.buildHtml.build(this.data.template, this.data.data, this.data.options);
   }
 
 }

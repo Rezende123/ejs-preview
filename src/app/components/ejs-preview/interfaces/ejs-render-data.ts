@@ -1,5 +1,5 @@
 export interface EjsRenderData {
-    ejs: string;
+    template: string;
     data: object;
     options: object;
-}
+};
