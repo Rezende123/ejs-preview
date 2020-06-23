@@ -3,7 +3,7 @@
     <app-input-ejs (sendData)="setRenderData($event)">
     </app-input-ejs>
   </div>
-  <div class="btn-build mat-elevation-z2" matRipple>
+  <div class="btn-build mat-elevation-z2" (click)="build()" matRipple>
     <mat-icon>play_arrow</mat-icon>
   </div>
   <div class="output">
