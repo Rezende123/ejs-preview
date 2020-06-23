@@ -1,5 +1,5 @@
 <div id="app">
-  <app-menu></app-menu>
+  <app-menu [lenguage]="lenguage" (sendLenguage)="setLenguage($event)"></app-menu>
   <app-content></app-content>
   <app-footer></app-footer>
 </div>

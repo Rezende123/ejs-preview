@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Output, Input } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent {
 
-  constructor() { }
+  @Output()
+  sendLenguage = new EventEmitter();
 
-  ngOnInit() {
+  @Input()
+  lenguage: string;
+
+  changeLenguage(lenguage) {
+    this.lenguage = lenguage.value;
+    this.sendLenguage.emit(this.lenguage);
   }
-
 }

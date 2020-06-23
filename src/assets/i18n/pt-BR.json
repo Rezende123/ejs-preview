@@ -20,5 +20,8 @@
     "rendered": "Renderizado",
     "code": "Código",
 
-    "err_json_format": "Erro no formato do JSON"
+    "err_json_format": "Erro no formato do JSON",
+
+    "en": "Inglês",
+    "pt": "Portugês"
 }

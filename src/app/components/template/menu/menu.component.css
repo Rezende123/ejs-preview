@@ -5,6 +5,9 @@ header {
     padding: 15px;
     background-color: #f8f587;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu-title {

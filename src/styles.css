@@ -6,3 +6,13 @@ body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+div.mat-button-toggle-label-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+button.mat-button-toggle-button {
+    height: 100%;
+}

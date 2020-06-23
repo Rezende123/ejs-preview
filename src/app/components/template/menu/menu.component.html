@@ -1,3 +1,8 @@
 <header>
   <h1 class="menu-title"> EJS Preview </h1>
+
+  <mat-button-toggle-group [value]="lenguage" (change)="changeLenguage($event)">
+    <mat-button-toggle value="pt-BR">{{ 'pt' | translate}}</mat-button-toggle>
+    <mat-button-toggle value="en">{{ 'en' | translate }}</mat-button-toggle>
+  </mat-button-toggle-group>
 </header>

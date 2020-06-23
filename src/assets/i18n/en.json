@@ -20,5 +20,8 @@
     "rendered": "Rendered",
     "code": "Code",
 
-    "err_json_format": "Error in JSON format"
+    "err_json_format": "Error in JSON format",
+
+    "en": "English",
+    "pt": "Portugese"
 }
