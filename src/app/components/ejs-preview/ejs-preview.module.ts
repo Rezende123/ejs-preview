@@ -7,6 +7,13 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { AceEditorModule } from 'ng2-ace-editor';
 import { InputEjsComponent } from './components/input-ejs/input-ejs.component';
 import { OutputEjsComponent } from './components/output-ejs/output-ejs.component';
+import { HttpClient } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   imports: [
@@ -14,7 +21,15 @@ import { OutputEjsComponent } from './components/output-ejs/output-ejs.component
     MatCardModule,
     MatRippleModule,
     MatTabsModule,
-    AceEditorModule
+    AceEditorModule,
+    TranslateModule.forRoot({
+      defaultLanguage: 'pt-BR',
+      loader: {
+          provide: TranslateLoader,
+          useFactory: (createTranslateLoader),
+          deps: [HttpClient]
+      }
+    })
   ],
   declarations: [
     EjsPreviewComponent,

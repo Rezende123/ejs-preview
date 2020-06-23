@@ -1,0 +1,22 @@
+{
+    "about_ejs": "Sobre EJS",
+    "what_is": "O que é?",
+    "what_is_content": "O 'E' é algo variável, pode ser 'Embedded', assim como 'Effective', 'Elegant' ou até 'Easy'. EJS é uma linguagem de modelagem simples, que gera código HTML com simples marcação de JavaScript. Sem muito rigor para organizar as coisas. Sem reinventar iteração ou controle de fluxo. É simplesmente JavaScript.",
+    "how_to_use": "Como Usar?",
+    "how_to_use_content": "Nesta aplicação o ejs é renderizado através do template (EJS), passagem dos dados e das opções de configuração via JSON.",
+    "resources": "Recursos",
+    "control_flow_with": "Fluxo de controle com",
+    "show_out_with": "Exibir saída com",
+    "jump_line_with": "Pular linha com",
+    "in_final_tag": "no final da tag",
+    "white_space_control": "Espaço em branco para controlar o fluxo com",
+    "delimiters": "Delimitadores customizados com (e.g.",
+    "instead_of": "ao invés de",
+    "about_more": "Para saber mais sobre a estrutura deste template recomendo ler em",
+
+    "template": "Template",
+    "data": "Dados",
+    "options": "Opções",
+    "rendered": "Renderizado",
+    "code": "Código"
+}

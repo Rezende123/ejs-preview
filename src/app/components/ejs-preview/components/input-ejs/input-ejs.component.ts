@@ -14,18 +14,18 @@ export class InputEjsComponent {
   data: EjsRenderData;
   tabsConfig = [
     {
-      label: 'Template',
+      label: 'template',
       field: 'ejs',
       mode: 'html'
     },
     {
-      label: 'Dados',
+      label: 'data',
       field: 'data',
       mode: 'json',
       error: null
     },
     {
-      label: 'Opções',
+      label: 'options',
       field: 'options',
       mode: 'json',
       error: null

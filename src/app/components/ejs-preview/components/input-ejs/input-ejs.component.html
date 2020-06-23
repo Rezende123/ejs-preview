@@ -1,6 +1,6 @@
 <mat-tab-group mat-align-tabs="start">
   <mat-tab *ngFor="let tab of tabsConfig; let i = index"
-    [label]="tab.label">
+    label="{{tab.label | translate}}">
     <div
       [class.code-error]="tab.error"
       ace-editor
