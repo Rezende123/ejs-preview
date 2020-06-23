@@ -1,0 +1,24 @@
+{
+    "about_ejs": "About EJS",
+    "what_is": "What is?",
+    "what_is_content": "What is the ‘E’ for? ‘Embedded?’ Could be. How about ‘Effective’, ‘Elegant’, or just ‘Easy’? EJS is a simple templating language that lets you generate HTML markup with plain JavaScript. No religiousness about how to organize things. No reinvention of iteration and control-flow. It's just plain JavaScript.",
+    "how_to_use": "How to use?",
+    "how_to_use_content": "In this application the ejs is render through a template (EJS), passage of data and config options by JSON.",
+    "resources": "Resources",
+    "control_flow_with": "Control flow with",
+    "show_out_with": "Escaped output with",
+    "jump_line_with": "Newline-trim mode ('newline slurping') with",
+    "in_final_tag": "ending tag",
+    "white_space_control": "Whitespace-trim mode (slurp all whitespace) for control flow with",
+    "delimiters": "Custom delimiters (e.g.",
+    "instead_of": "instead of",
+    "about_more": "To know about the structure is recommended read in",
+
+    "template": "Template",
+    "data": "Data",
+    "options": "Options",
+    "rendered": "Rendered",
+    "code": "Code",
+
+    "err_json_format": "Error in JSON format"
+}

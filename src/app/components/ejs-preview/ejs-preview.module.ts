@@ -10,6 +10,7 @@ import { OutputEjsComponent } from './components/output-ejs/output-ejs.component
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import lenguage from 'src/assets/base';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -23,7 +24,7 @@ export function createTranslateLoader(http: HttpClient) {
     MatTabsModule,
     AceEditorModule,
     TranslateModule.forRoot({
-      defaultLanguage: 'pt-BR',
+      defaultLanguage: lenguage,
       loader: {
           provide: TranslateLoader,
           useFactory: (createTranslateLoader),
