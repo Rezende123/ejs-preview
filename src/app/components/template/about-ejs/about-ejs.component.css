@@ -16,6 +16,6 @@ mat-card-title h1 {
     text-decoration: none;
 }
 
-span.code {
-    background-color: #f7f7f7;
+h3 {
+    margin-left: 15px;
 }
