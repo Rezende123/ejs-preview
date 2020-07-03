@@ -26,9 +26,26 @@
           <li>{{ 'show_out_with' | translate }} <span class="code"><%= %></span></li>
           <li>{{ 'jump_line_with' | translate }} <span class="code">-%></span> {{ 'in_final_tag' | translate }}</li>
           <li>{{ 'white_space_control' | translate }} <span class="code"><%_ _%></span></li>
-          <li>{{ 'delimiters' | translate }} <span class="code">[? ?]</span> {{ 'instead_of' | translate }} <span class="code"><% %></span></li>
+          <li>{{ 'delimiters' | translate }} <span class="code">[? ?]</span> {{ 'instead_of' | translate }} <span class="code"><% %></span>)</li>
           <li>Includes</li>
         </ul>
+      <h3>
+        {{ 'options' | translate }}
+      </h3>
+
+      <ul [innerHTML]="'option_content' | translate"></ul>
+
+      <h3>
+        Tags
+      </h3>
+
+      <ul [innerHTML]="'tags_content' | translate"></ul>
+
+      <h3>
+        Includes
+      </h3>
+
+      <p [innerHTML]="'includes_content' | translate"></p>
 
       <p class="content">
         {{ 'about_more' | translate }}
