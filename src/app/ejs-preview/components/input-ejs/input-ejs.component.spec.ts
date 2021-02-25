@@ -39,4 +39,16 @@ describe('InputEjsComponent', () => {
 
     expect(tab.error).toEqual('err_json_format');
   });
+
+  it('Send input data', () => {
+    const tabIndex = 1;
+    const tab = component.tabsConfig[tabIndex];
+    const json = '{"data":1}';
+
+    component.sendData.subscribe((obj) => {
+      const jsonParsed = JSON.parse(json);
+      expect(obj.data).toEqual(jsonParsed.data);
+    });
+    component.onChange(tab.field, tabIndex, json);
+  });
 });
