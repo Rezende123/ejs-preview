@@ -1,9 +1,8 @@
 /* tslint:disable:no-unused-variable */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
 
 import { MenuComponent } from './menu.component';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 describe('MenuComponent', () => {
   let component: MenuComponent;
@@ -11,6 +10,9 @@ describe('MenuComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        TranslateModule.forRoot(),
+      ],
       declarations: [ MenuComponent ]
     })
     .compileComponents();
@@ -24,5 +26,15 @@ describe('MenuComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('Change translate lenguage', () => {
+    const lenguage = {value: 'en-US'};
+    
+    component.sendLenguage.subscribe((len) => {
+      expect(len).toEqual(lenguage.value);
+    });
+    
+    component.changeLenguage(lenguage);    
   });
 });
